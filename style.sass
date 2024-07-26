@@ -1,76 +1,94 @@
-/* Font */
+// Importer les polices Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap')
+
+// Définir les polices locales avec @font-face
+@font-face
+  font-family: 'Bobby Jones Soft'
+  src: url('../assets/fonts/bobby_jones_soft-webfont.woff2') format('woff2')
+  font-weight: 400
+  font-style: normal
 
 @font-face
-    font-family: 'Bobby Jones Soft'
-    src: url('../assets/fonts/bobby_jones_soft-webfont.woff2') format('woff2')
-    font-weight: 400
-    font-style: normal
+  font-family: 'Shadows Into Light Two'
+  src: url('../assets/fonts/shadows_into_light_two.woff2') format('woff2')
+  font-weight: 400
+  font-style: normal
 
-@font-face
-    font-family: 'Shadows Into Light Two'
-    font-style: normal
-    font-weight: 400
-    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet')
-
-@font-face
-    font-family: 'Poppins'
-    font-style: normal
-    font-weight: 400
-    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
 
 /* Hero */
 .hero
   display: flex
   align-items: center
   justify-content: space-between
-  padding: 2rem
-  color: #333
+  padding: 2%
+  background-color: #FFEEE9
 
   &__left
     width: 50%
 
     .hero__subtitle
       color: #231F1E
-      font-family: "Shadows Into Light Two"
+      font-family: 'Shadows Into Light', sans-serif
       font-size: 2.5rem
       font-style: normal
       font-weight: 400
+      line-height: normal
+      letter-spacing: 0.125rem
 
     .hero__title
       color: #231F1E
+      font-family: 'Bobby Jones Soft', sans-serif
+      font-size: 4rem
+      font-style: normal
+      font-weight: 400
+      line-height: normal
       leading-trim: both
       text-edge: cap
-      font-family: "Bobby Jones Soft"
-      font-size: 4rem
 
     .hero__description
-      font-family: "Poppins"
+      color: #231F1E
+      font-family: 'Poppins', sans-serif
       font-size: 1rem
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      letter-spacing: 0.05rem
 
     .hero__cta
       display: inline-block
       background-color: #CD3D55
-      color: #fff
-      text-decoration: none
       border-radius: 3.125rem
-      font-family: Poppins
-      font-weight: bold
-      transition: background-color 0.3s
+      font-family: 'Poppins', sans-serif
+      font-size: 0.875rem
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      letter-spacing: 0.04375rem
+      text-transform: uppercase
+      text-decoration: none
+      color: #fff
       padding: 0.75rem
+      transition: background-color 0.3s
       justify-content: center
       align-items: center
       gap: 0.625rem
 
-    .hero__cta-button 
+    .hero__cta-button
       display: inline-block
       background-color: #CD3D55
-      color: #fff
-      text-decoration: none
       border-radius: 3.125rem
-      font-family: Poppins
-      font-weight: bold
-      transition: background-color 0.3s
+      font-family: 'Poppins', sans-serif
+      font-size: 0.875rem
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      letter-spacing: 0.04375rem
+      text-transform: uppercase
+      text-decoration: none
+      color: #fff
       padding: 0.75rem
+      transition: background-color 0.3s
       justify-content: center
       align-items: center
       gap: 0.625rem
@@ -81,6 +99,21 @@
 
   &__right
     width: 50%
+    background-image: url('<?php echo esc_url( get_field('home__header_img_background')); ?>')
+    background-size: cover
+    background-position: center
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .hero__right_image
+      .hero__image
+        width: auto
+        height: auto
+        object-fit: cover
+        max-width: 100%
+        max-height: 100%
+
 
 /* Concept */
 

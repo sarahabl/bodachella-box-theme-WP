@@ -1,31 +1,24 @@
 // Importer les polices Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap')
 
 // Définir les polices locales avec @font-face
 @font-face
   font-family: 'Bobby Jones Soft'
   src: url('../assets/fonts/bobby_jones_soft-webfont.woff2') format('woff2')
-  font-weight: 400
-  font-style: normal
-
-@font-face
-  font-family: 'Shadows Into Light Two'
-  src: url('../assets/fonts/shadows_into_light_two.woff2') format('woff2')
-  font-weight: 400
-  font-style: normal
-
 
 /* Hero */
 .hero
   display: flex
   align-items: center
-  justify-content: space-between
   padding: 4%
   background-color: #FFEEE9
+  width: 100%
+  height: auto
 
   &__left
     width: 50%
+    gap: 3rem
 
     .hero__subtitle
       color: #231F1E
@@ -35,25 +28,19 @@
       font-weight: 400
       line-height: normal
       letter-spacing: 0.125rem
+      margin: 0
 
     .hero__title
       color: #231F1E
       font-family: 'Bobby Jones Soft', sans-serif
       font-size: 4rem
+      margin: 0
       font-style: normal
-      font-weight: 400
-      line-height: normal
-      leading-trim: both
-      text-edge: cap
 
     .hero__description
       color: #231F1E
       font-family: 'Poppins', sans-serif
       font-size: 1rem
-      font-style: normal
-      font-weight: 400
-      line-height: normal
-      letter-spacing: 0.05rem
 
     .hero__cta
       display: inline-block
@@ -61,11 +48,6 @@
       border-radius: 3.125rem
       font-family: 'Poppins', sans-serif
       font-size: 0.875rem
-      font-style: normal
-      font-weight: 700
-      line-height: normal
-      letter-spacing: 0.04375rem
-      text-transform: uppercase
       text-decoration: none
       color: #fff
       padding: 0.75rem
@@ -73,17 +55,19 @@
       justify-content: center
       align-items: center
       gap: 0.625rem
+      margin: 2rem 0rem
+
+      &:hover
+        background-color: #95414f
+        text-decoration: none
+        color: #fff  // Assure que la couleur du texte reste blanche
 
     .hero__cta-button
       display: inline-block
       background-color: #CD3D55
       border-radius: 3.125rem
       font-family: 'Poppins', sans-serif
-      font-size: 0.875rem
-      font-style: normal
-      font-weight: 700
-      line-height: normal
-      letter-spacing: 0.04375rem
+      font-size: 0.875rem  
       text-transform: uppercase
       text-decoration: none
       color: #fff
@@ -93,9 +77,11 @@
       align-items: center
       gap: 0.625rem
 
-    &:hover .hero__cta,
-    &:hover .hero__cta-button
-      background-color: #95414f
+      &:hover
+        background-color: #95414f
+        text-decoration: none
+        color: #fff  // Assure que la couleur du texte reste blanche
+
 
   &__right
     width: 50%
@@ -124,23 +110,26 @@
     align-items: flex-start
     gap: 0.625rem
     align-self: stretch
-    background-color: #F1DAD4
+    background-color: #fff
 
     &__container
+        display: flex
         padding: 5rem
         flex-direction: column
         align-items: flex-start
+        gap: 40px
         align-self: stretch
-        background-color: #fff
+        background-color: #FFEEE9
 
         &_subtitle
             color: #231F1E
-            font-family: Bobby Jones Soft Outline
+            font-family: 'Shadows Into Light', sans-serif
             font-size: 2rem
             font-style: normal
             font-weight: 400
             line-height: normal
             letter-spacing: 0.125rem
+            margin: 0
 
         &_title
             color: #231F1E
@@ -149,10 +138,11 @@
             font-style: normal
             font-weight: 400
             line-height: normal
+            margin: 0
 
         &_description
             color: #231F1E
-            font-family: Shadows Into Light Two
+            font-family: 'Poppins', sans-serif
             font-size: 1.25rem
             font-style: normal
             font-weight: 400
@@ -165,11 +155,11 @@
     padding: 2rem
     flex-direction: column
     align-items: flex-start
-    gap: 3rem
+    gap: 40px
     align-self: stretch
 
     .box__container
-        width: 100%
+      width: 100%
 
     .box__subtitle
         color: #231F1E

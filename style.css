@@ -8,14 +8,15 @@
 .hero {
   display: flex;
   align-items: center;
-  padding: 4%;
+  padding: 2rem;
   background-color: #FFEEE9;
   width: 100%;
   height: auto;
 }
 .hero__left {
   width: 50%;
-  gap: 3rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 .hero__left .hero__subtitle {
   color: #231F1E;
@@ -29,10 +30,12 @@
 }
 .hero__left .hero__title {
   color: #231F1E;
-  font-family: "Bobby Jones Soft", sans-serif;
+  font-family: Bobby Jones Soft;
   font-size: 4rem;
-  margin: 0;
   font-style: normal;
+  line-height: normal;
+  margin: 0;
+  font-weight: 400;
 }
 .hero__left .hero__description {
   color: #231F1E;
@@ -103,16 +106,17 @@
   padding: 8.75rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.625rem;
+  gap: 2rem;
   align-self: stretch;
   background-color: #fff;
+  padding: 4rem;
 }
 .concept__container {
   display: flex;
   padding: 5rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
+  gap: 2rem;
   align-self: stretch;
   background-color: #FFEEE9;
 }
@@ -131,18 +135,14 @@
   font-family: Bobby Jones Soft;
   font-size: 3.5rem;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   margin: 0;
+  font-weight: 400;
 }
 .concept__container_description {
   color: #231F1E;
   font-family: "Poppins", sans-serif;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.0625rem;
+  font-size: 1rem;
 }
 
 /* Box */
@@ -151,37 +151,40 @@
   padding: 2rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
+  gap: 2rem;
   align-self: stretch;
+  background-color: #FFEEE9;
 }
 .box .box__container {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 .box .box__subtitle {
   color: #231F1E;
-  font-family: Bobby Jones Soft Outline;
+  font-family: "Shadows Into Light", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.125rem;
+  margin: 0;
 }
 .box .box__title {
   color: #231F1E;
   font-family: Bobby Jones Soft;
   font-size: 3.5rem;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
+  margin: 0;
+  font-weight: 400;
 }
 .box .box__description {
   color: #231F1E;
-  font-family: Shadows Into Light Two;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.0625rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  width: 50rem;
 }
 .box .box__items {
   height: 22rem;

@@ -26,7 +26,7 @@
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: 0.125rem;
   margin: 0;
 }
@@ -35,7 +35,7 @@
   font-family: Bobby Jones Soft;
   font-size: 4rem;
   font-style: normal;
-  line-height: normal;
+  line-height: 100%;
   margin: 0;
   font-weight: 400;
 }
@@ -130,7 +130,7 @@
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: 0.125rem;
   margin: 0;
 }
@@ -139,7 +139,7 @@
   font-family: Bobby Jones Soft;
   font-size: 3.5rem;
   font-style: normal;
-  line-height: normal;
+  line-height: 100%;
   margin: 0;
   font-weight: 400;
 }
@@ -171,7 +171,7 @@
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: 0.125rem;
   margin: 0;
 }
@@ -180,7 +180,7 @@
   font-family: "Bobby Jones Soft", sans-serif;
   font-size: 3.5rem;
   font-style: normal;
-  line-height: normal;
+  line-height: 100%;
   margin: 0;
   font-weight: 400;
 }
@@ -219,7 +219,7 @@
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: 0.0625rem;
 }
 .box .box__item_description {
@@ -227,7 +227,7 @@
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
 }
 .box .box__item_image {
   width: 100%;
@@ -240,7 +240,7 @@
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: 0.04375rem;
   text-transform: uppercase;
 }
@@ -261,7 +261,6 @@
 }
 .values .values__container {
   width: 100%;
-  gap: 2rem;
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -272,7 +271,7 @@
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: 0.125rem;
   margin: 0;
 }
@@ -281,7 +280,7 @@
   font-family: "Bobby Jones Soft", sans-serif;
   font-size: 3.5rem;
   font-style: normal;
-  line-height: normal;
+  line-height: 100%;
   margin: 0;
   font-weight: 400;
 }
@@ -342,7 +341,7 @@
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: 0.125rem;
   margin: 0;
 }
@@ -351,7 +350,7 @@
   font-family: "Bobby Jones Soft", sans-serif;
   font-size: 3.5rem;
   font-style: normal;
-  line-height: normal;
+  line-height: 100%;
   margin: 0;
   font-weight: 400;
 }
@@ -360,7 +359,7 @@
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
 }
 .blog .blog__grid {
   display: flex;
@@ -369,11 +368,18 @@
   justify-content: center;
 }
 .blog .blog__grid .blog__post {
-  width: calc(33% - 1rem);
-  background-color: #fff;
+  width: 16.25rem;
+  height: auto;
   padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+  transform: rotate(0.617deg);
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background: var(--white, #FFF);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  justify-content: center;
 }
 .blog .blog__grid .blog__post .blog__post-image-container {
   position: relative;
@@ -393,13 +399,12 @@
   padding-top: 75%;
 }
 .blog .blog__grid .blog__post .blog__post-details .blog__post-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-.blog .blog__grid .blog__post .blog__post-details .blog__post-title a {
-  color: #333;
-  text-decoration: none;
+  font-family: "Shadows Into Light Two", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.0625rem;
 }
 .blog .blog__grid .blog__post .blog__post-details .blog__post-excerpt {
   font-size: 0.9rem;

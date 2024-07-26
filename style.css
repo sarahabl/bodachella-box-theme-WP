@@ -11,7 +11,7 @@
   padding: 2rem;
   background-color: #FFEEE9;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 .hero__left {
   width: 50%;
@@ -84,12 +84,14 @@
 }
 .hero__right {
   width: 50%;
-  background-image: url("../images/right.png");
-  background-size: cover;
+  background-image: url("images/logo.svg");
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 .hero__right .hero__right_image .hero__image {
   width: auto;
@@ -204,6 +206,7 @@
   background: var(--white, #FFF);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  justify-content: center;
 }
 .box .box__item:hover {
   transform: rotate(3deg);

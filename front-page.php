@@ -11,7 +11,7 @@
       <a href="<?php echo esc_url( get_field('home__header_cta_link')); ?>" class="hero__cta-button"><?php echo esc_html( get_field('home__header_cta_label')); ?></a>
     </div>
   </div>
-  <div class="hero__right">
+  <div class="hero__right"> 
     <div class="hero__right_image">
       <img src="<?php echo esc_url( get_field('home__header_img')); ?>" alt="Plein d'activités" class="hero__image">
     </div>

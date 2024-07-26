@@ -94,7 +94,7 @@
 }
 .hero__right {
   width: 50%;
-  background-image: url("<?php echo esc_url( get_field(" home__header_img_background ")); ?>");
+  background-image: url(.image/right.png);
   background-size: cover;
   background-position: center;
   display: flex;

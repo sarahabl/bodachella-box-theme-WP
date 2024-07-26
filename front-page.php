@@ -15,7 +15,6 @@
     <div class="hero__right_image">
       <img src="<?php echo esc_url( get_field('home__header_img')); ?>" alt="Plein d'activités" class="hero__image">
     </div>
-    <img src="<?php echo esc_url( get_field('home__header_img_background')); ?>" alt="Plein d'activités" class="hero__image">
   </div>
 </section>
 

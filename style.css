@@ -173,7 +173,7 @@
 }
 .box .box__title {
   color: #231F1E;
-  font-family: Bobby Jones Soft;
+  font-family: "Bobby Jones Soft", sans-serif;
   font-size: 3.5rem;
   font-style: normal;
   line-height: normal;
@@ -187,25 +187,30 @@
   width: 50rem;
 }
 .box .box__items {
-  height: 22rem;
-  align-self: stretch;
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
+  justify-content: space-between;
 }
 .box .box__item {
-  width: 15rem;
-  height: auto;
+  width: 16.25rem;
+  height: 21.875rem;
+  padding: 1rem;
+  gap: 1rem;
   transform: rotate(0.617deg);
-  padding: 0.5rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
   flex-shrink: 0;
   background: var(--white, #FFF);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.box .box__item:hover {
+  transform: rotate(3deg);
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.2);
 }
 .box .box__item_title {
-  font-family: "Shadows Into Light Two";
+  font-family: "Shadows Into Light Two", sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
@@ -213,7 +218,7 @@
   letter-spacing: 0.0625rem;
 }
 .box .box__item_description {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -225,7 +230,7 @@
   align-self: stretch;
 }
 .box .box__item_button {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -234,6 +239,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .box__items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* Valeurs */
 .values {
   padding: 2rem 0;

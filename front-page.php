@@ -13,7 +13,7 @@
   </div>
   <div class="hero__right"> 
     <div class="hero__right_image">
-      <img src="<?php echo esc_url( get_field('home__header_img')); ?>" alt="Plein d'activités" class="hero__image">
+    <img src="<?php echo esc_url( get_sub_field('home__header_img')); ?>" alt="Plein d'activités" class="hero__image">
     </div>
   </div>
 </section>
